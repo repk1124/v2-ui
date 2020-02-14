@@ -102,12 +102,9 @@ install_v2-ui() {
     systemctl enable v2-ui
     systemctl start v2-ui
     echo -e "${green}v2-ui v${last_version}${plain} 安装完成，面板已启动，"
-    echo -e ""
     echo -e "如果是全新安装，默认网页端口为 ${green}65432${plain}，用户名和密码默认都是 ${green}admin${plain}"
     echo -e "请自行确保此端口没有被其他程序占用，${yellow}并且确保 65432 端口已放行${plain}"
-    echo -e ""
     echo -e "如果是更新面板，则按你之前的方式访问面板"
-    echo -e ""
     curl -o /usr/bin/v2-ui -Ls https://github.com/repk1124/v2-ui/blob/master/v2-ui.sh
     chmod +x /usr/bin/v2-ui
     echo -e "v2-ui 管理脚本使用方法: "
